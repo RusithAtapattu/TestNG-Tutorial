@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="TestNG Parameters Suite" versbose="2">
+
+<!--    <parameter name="val1" value="60"/>-->
+<!--    <parameter name="val2" value="20"/>-->
+
+    <test name="Params1">
+<!--        <parameter name="val1" value="100"/>-->
+<!--        <parameter name="val2" value="50"/>-->
+        <classes>
+            <class name="testNG.parameter.ParameterTest01"/>
+        </classes>
+    </test>
+
+    <test name="Params2">
+        <parameter name="val1" value="60"/>
+        <parameter name="val2" value="30"/>
+        <classes>
+            <class name="testNG.parameter.ParameterTest02"/>
+        </classes>
+    </test>
+
+    <test name="Params3">
+                <parameter name="browser" value="chrome1"/>
+        <!--        <parameter name="val2" value="50"/>-->
+        <classes>
+            <class name="testNG.parameter.ParameterTest03"/>
+        </classes>
+    </test>
+</suite>

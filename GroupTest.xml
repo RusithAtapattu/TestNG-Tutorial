@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="GroupTest Suite" verbose="2">
+    <test name="GroupTest cases">
+
+        <groups>
+            <run>
+                <exclude name="S"/>
+                <include name="R"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testNG.GroupTest"/>
+        </classes>
+    </test>
+</suite>
